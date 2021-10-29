@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -6,7 +6,7 @@ export default StyleSheet.create({
     top: 0,
     left: '-100%',
     width: '200%',
-    paddingLeft: '100%',
+    paddingLeft: Platform.OS === "web" ? '100%' : '50%',
   },
 
   text: {
