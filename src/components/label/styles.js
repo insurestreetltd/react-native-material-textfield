@@ -1,15 +1,8 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    position: 'absolute',
-    top: 0,
-    left: '-100%',
-    width: '200%',
-    paddingLeft: Platform.OS === "web" ? '100%' : '50%',
-  },
-
   text: {
+    fontSize: 13,
     textAlign: 'left',
     includeFontPadding: false,
     textAlignVertical: 'top',
